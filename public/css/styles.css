@@ -1,0 +1,117 @@
+body{
+    background-color: black;
+    color: chartreuse;
+    text-align: center;
+}
+h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+p{
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.form{
+    width: 28rem;
+    text-align: center;
+    padding: 3.125rem 0 ;
+    margin: 3% auto;
+    box-shadow: 0 20px 40px chartreuse;
+}
+
+.info{
+    padding: 1.875rem;
+    
+}
+
+.userInfo{
+    font-family: 'Courier Prime', monospace;
+    width: 40%;
+    text-align: center;
+    color: rgb(233, 220, 48);
+    padding: 30px 0 ;
+    margin: 3% auto;
+
+    
+}
+.field{
+    border: solid chartreuse 2px ;
+    height: 30px;
+    width: 90%;
+    margin: 20px;
+}
+
+
+.myButton {
+	background-color:chartreuse;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:grey;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+footer{
+    color: crimson;
+}
+
+/* password meter */
+.password-strength-indicator
+            {
+                font-size: 16px;
+                border-radius:28px;
+                display: inline-block;
+                min-height: 30px;
+                min-width: 20%;
+                text-align: center;
+                transition: 1s;
+                margin: 50px 0;
+                color: black;
+                font-family: 'Baloo Paaji 2', cursive;
+            }
+
+            .password-strength-indicator.very-weak
+            {
+                background: #cf0000;
+                border-color: #a60000;
+                width:20%
+            }
+
+            .password-strength-indicator.weak
+            {
+                background: #f6891f;
+                border-color: #c56e19;
+                width:40%
+            }
+
+            .password-strength-indicator.mediocre
+            {
+                background: #eeee00;
+                border-color: #d6d600;
+                width:60%
+            }
+
+            .password-strength-indicator.strong
+            {
+                background: #99ff33;
+                border-color: #7acc29;
+                width:80%
+            }
+
+            .password-strength-indicator.very-strong
+            {
+                background: #22cf00;
+                border-color: #1B9900;
+                width:98%
+            }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Checker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&family=Courier+Prime&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="form">
+            <h1>PASSWORD CHECKER</h1>
+            <form class="item" action="/" method="post">
+                <div>
+                    <input class="field" id="password" type="password" name="pass" value="" placeholder="Enter your password" >
+                </div>
+                <button  class="myButton" type="submit" name="check">Check</button>
+              </form>
+        </div>
+        <div class="userInfo">
+            <p>Total no. of computing hours required to crack the password : <%= hours %>     computing hours. </p>
+            <p> It will take <%= years %>   years to crack the password in an hour with a default computer system.</p>
+        </div>
+        <div class="info">
+           <h2>HOW LONG DOES IT TAKE TO SEARCH ALL POSSIBLE PASSWORDS?</h2> 
+            <p>For a password to be difficult to crack, it should be chosen randomly from a large set, or “space,” of possibilities. The size, T, of the possibility
+                 space is based on the length, A, of the list of valid characters in the password 
+                 and the number of characters, N, in the password. The size of this space (T = AN) may vary considerably.</p>
+    
+               <p><strong>Note:</strong> Nowadays passwords are protected using hashing and salting and higher authentications.
+                   From the values of A, N, T and the number of hours, D, that hackers would have to spend to try every permutation of
+                 characters one by one. X is the number of years that will have to pass before the space can be checked in less than one hour, assuming that Moore’s law 
+                 (the doubling of computing capacity every two years) remains valid. I also assume that in 2019, a computer can explore a billion possibilities per second.
+            </p> 
+        </div>
+<footer>
+    <p> © Hashers</p>
+</footer>
+<script type="text/javascript" src="calculator.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script> 
+<script type="text/javascript" src="passwordstrength.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#password").passwordStrength();
+    });
+</script>
+<!-- bootstrap -->
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+</body>
+</html>
